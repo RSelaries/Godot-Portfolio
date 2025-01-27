@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://s8imoh13hmui"]
+[gd_scene load_steps=2 format=3 uid="uid://s8imoh13hmui"]
+
+[ext_resource type="Texture2D" uid="uid://dlntch0gyqv2s" path="res://background.png" id="1_1ujt7"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -7,6 +9,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1ujt7")
+stretch_mode = 6
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
